@@ -13,10 +13,11 @@ public class OrderFacadeTest {
     public void should_be_able_to_create_order() {
         // TODO: task1 impl
         // given:
-
+        OrderResult order;
         // when:
-
+        order = orderFacade.create();
         // then:
+        assertTrue(order.isSuccess());
     }
 
     // TODO: task2 propose test methods to cover all use cases
